@@ -33,7 +33,7 @@ function CompanyPage() {
                 <CompanyHeader/>
             </div>
             <div id="companyBanner">
-                <CompanyBanner/>
+                
             </div>
             <div id="companyOverviewSelect">
                     <CompanyOverviewSelect onData = {childData}/>
