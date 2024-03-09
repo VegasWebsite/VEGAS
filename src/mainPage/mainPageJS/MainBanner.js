@@ -4,8 +4,6 @@ import "../mainPageCSS/mainPageBanner.css"
 function MainBanner(){
     return(
         <div id="mainBanner">
-        
-
         </div>
     )
 }

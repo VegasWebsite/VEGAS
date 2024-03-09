@@ -1,8 +1,8 @@
 import React from "react";
 import MainBanner from "./MainBanner";
-import MainFooter from "./MainFooter";
 import MainHeader from "./MainHeader";
 import "../mainPageCSS/mainPage.css"
+import CommonFooter from "../../util/utilJS/CommonFooter";
 
 function MainPage(){
     return(
@@ -13,8 +13,8 @@ function MainPage(){
             <div  id="mainBanner">
                 <MainBanner/>
             </div>
-            <div  id="mainFooter">
-                <MainFooter />
+            <div id="mainFooter">
+                <CommonFooter/>
             </div>
             
             
