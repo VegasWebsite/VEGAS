@@ -5,7 +5,6 @@ import "../companyPageCSS/companyPage.css"
 
 import CommonFooter from "../../util/utilJS/CommonFooter";
 import CompanyHeader from "./CompanyHeader";
-import CompanyBanner from "../companyPageJS/CompanyBanner";
 import CompanyOverviewSelect from "./CompanyOverviewSelect";
 import CompanyWaytoBackground from "./CompanyWaytoBackground";
 
