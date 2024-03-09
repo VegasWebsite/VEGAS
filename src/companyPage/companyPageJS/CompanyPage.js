@@ -7,7 +7,7 @@ import OrganizationChart from "../companyPageIMG/organizationChart.svg";
 
 import CommonFooter from "../../util/utilJS/CommonFooter";
 import CompanyHeader from "./CompanyHeader";
-import CompanyBanner from "./CompanyBanner";
+import CompanyBanner from "../companyPageJS/CompanyBanner";
 import CompanyOverviewSelect from "./CompanyOverviewSelect";
 import CompanyWaytoBackground from "./CompanyWaytoBackground";
 function CompanyPage() {
