@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import "../companyPageCSS/companyPage.css"
 
-import ComponyOverview from "../companyPageIMG/companyOverview.svg";
-import Ceo from "../companyPageIMG/ceo.svg";
-import OrganizationChart from "../companyPageIMG/organizationChart.svg";
+
 
 import CommonFooter from "../../util/utilJS/CommonFooter";
 import CompanyHeader from "./CompanyHeader";
 import CompanyBanner from "../companyPageJS/CompanyBanner";
 import CompanyOverviewSelect from "./CompanyOverviewSelect";
 import CompanyWaytoBackground from "./CompanyWaytoBackground";
+
+import ComponyOverview from "../companyPageIMG/companyOverview.svg";
+import Ceo from "../companyPageIMG/ceo.svg";
+import OrganizationChart from "../companyPageIMG/organizationChart.svg";
 function CompanyPage() {
 
     const [activeImage, setActiveImage] = useState(0);
