@@ -11,15 +11,14 @@
 #mainPageHeaderLogo {
 }
 #mainPageHeaderLogo> img{
-    width: 100%;
-    height: auto;
+    width: 9vw;
 }
 
 #mainPageHeaderMenu {
     width: 30%;
     display: flex;
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 1vw;
 
     justify-content: space-between;
 }

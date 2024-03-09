@@ -8,8 +8,7 @@
 }
 
 #companyHeaderLogo> img{
-    width: 80%;
-    height: 80%;
+    width: 7vw;
     cursor: pointer;
 }
 
@@ -17,7 +16,7 @@
     width: 30%;
     display: flex;
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 1vw;
 
     justify-content: space-between;
 }

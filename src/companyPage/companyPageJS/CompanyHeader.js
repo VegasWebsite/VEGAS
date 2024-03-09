@@ -20,7 +20,7 @@ function CompanyHeader(){
 
             <div id="companyHeaderMenu">
 
-                <Link to="/companyPage" style={{ textDecoration: "none", color: "blue", fontFamily : "poppins"}}>
+                <Link to="/companyPage" style={{ textDecoration: "none", color: "blue", fontFamily : "poppins" }}>
                     <p>Company</p>
                 </Link>
 
@@ -32,7 +32,7 @@ function CompanyHeader(){
                     <p>Automation</p>
                 </Link>
 
-                <Link to="/contactPage" style={{ textDecoration: "none", color: "#000000",  fontFamily : "poppins"}}>
+                <Link to="/contactPage" style={{ textDecoration: "none", color: "#000000",  fontFamily : "poppins" }}>
                     <p>Contact</p>
                 </Link>
             </div>

@@ -7,16 +7,18 @@ import OrganizationChart from "../companyPageIMG/organizationChart.svg";
 
 import CommonFooter from "../../util/utilJS/CommonFooter";
 import CompanyHeader from "./CompanyHeader";
-import CompanyBanner from "./companyBanner";
+import CompanyBanner from "./CompanyBanner";
 import CompanyOverviewSelect from "./CompanyOverviewSelect";
 import CompanyWaytoBackground from "./CompanyWaytoBackground";
 function CompanyPage() {
 
     const [activeImage, setActiveImage] = useState(0);
+    console.log(activeImage +"active");
     const childData = (data) => {
         console.log(data + "받아옴");
         showImage(data);
     }
+
 
     const showImage = (index) =>{
         console.log(index);
@@ -40,12 +42,11 @@ function CompanyPage() {
                 <img src={Ceo} className={activeImage == 1 ? 'active' : 'image'}/>
                 <img src={OrganizationChart} className={activeImage == 2 ? 'active' : 'image'}/>
                 <div id="companyWaytoBackground"  className={activeImage == 3 ? 'active' : 'image'}>
-                    <CompanyWaytoBackground/>
+                    <CompanyWaytoBackground activeImage = {activeImage}/>
                 </div>
-                
-                <div id="companyFooter">
+            </div>
+            <div id="companyFooter">
                     <CommonFooter/>
-                </div>
             </div>
             
         </div>
