@@ -5,6 +5,7 @@ import "../companyPageCSS/companyPage.css"
 
 import CommonFooter from "../../util/utilJS/CommonFooter";
 import CompanyHeader from "./CompanyHeader";
+import CompanyBanner from "../companyPageJS/CompanyBanner";
 import CompanyOverviewSelect from "./CompanyOverviewSelect";
 import CompanyWaytoBackground from "./CompanyWaytoBackground";
 
@@ -32,7 +33,7 @@ function CompanyPage() {
                 <CompanyHeader/>
             </div>
             <div id="companyBanner">
-                
+                <CompanyBanner/>
             </div>
             <div id="companyOverviewSelect">
                     <CompanyOverviewSelect onData = {childData}/>
