@@ -7,7 +7,7 @@ function CommonFooter(){
 
     return(
         <div id="Footer">
-            <img src={Footer}/>
+            <img src={Footer}/> 
          </div>
     )
 

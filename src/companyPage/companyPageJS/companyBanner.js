@@ -4,7 +4,7 @@ import Banner from "../companyPageIMG/companyBanner.svg";
 function CompanyBanner(){
     return(
         <div id="companyBanner">
-            <img id="banner" src={Banner}/>
+            <img id="banner" src={Banner}/> 
         </div>
     )
 }
