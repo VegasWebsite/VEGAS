@@ -6,7 +6,7 @@ import Ceo from "../companyPageIMG/ceo.svg";
 import OrganizationChart from "../companyPageIMG/organizationChart.svg";
 
 import CommonFooter from "../../util/utilJS/CommonFooter";
-import CommonHeader from "../../util/utilJS/CommonHeader";
+import CompanyHeader from "./CompanyHeader";
 import CompanyBanner from "./companyBanner";
 import CompanyOverviewSelect from "./CompanyOverviewSelect";
 import CompanyWaytoBackground from "./CompanyWaytoBackground";
@@ -26,7 +26,7 @@ function CompanyPage() {
     return (
         <div id="companyPage">
             <div id="companyHeader">
-                <CommonHeader/>
+                <CompanyHeader/>
             </div>
             <div id="companyBanner">
                 <CompanyBanner/>
