@@ -1,0 +1,25 @@
+#commonHeader {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: 0 10%;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+#commonHeaderLogo {
+}
+#commonHeaderLogo> img{
+    width: 100%;
+    height: auto;
+}
+
+#commonHeaderMenu {
+    width: 30%;
+    display: flex;
+    color: #ffffff;
+    font-size: 1.1rem;
+
+    justify-content: space-between;
+}

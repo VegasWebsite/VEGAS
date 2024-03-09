@@ -1,0 +1,12 @@
+#comPanyOverviewSelect{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#comPanyOverviewSelect>p{
+    font-weight: bold;
+}

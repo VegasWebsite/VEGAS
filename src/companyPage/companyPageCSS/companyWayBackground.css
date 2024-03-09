@@ -1,0 +1,32 @@
+#companyWayBackground{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+#companyWayBackground> img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* map */
+
+#companyWay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    top: 0;
+}
+
+#companyMaps{
+    position: absolute;
+    margin-left: 10%;
+    border: 1px solid black;
+    width: 80%;
+    height: 75%;
+    top: 20%;
+    
+    
+}
