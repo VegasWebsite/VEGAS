@@ -12,7 +12,6 @@ function CompanyOverviewSelect(props){
 
     const resetBar =(v) => {
         const bar = document.getElementById("bar");
-        console.log(v);
         if(v == 0){
             bar.style.width = '25%';
             bar.style.left = '0%';
