@@ -1,15 +1,41 @@
 #comPanyOverviewSelect{
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
     height: 100%;
+}
+#selects{
+    width: 60%;
+    height: 70%;
     margin: auto;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#comPanyOverviewSelect>p{
+#select>p{
     cursor: pointer;
     font-weight: bold;
     font-family: pretendard;
     font-size: 1vw;
+}
+
+#selecteBar{
+    position: relative;
+    width: 60%;
+    height: 8%;
+    background-color: #F1F2F9;
+    z-index: -1;
+}
+.bar{
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(to right, #00F3C7, #42C8FF, #7737FF);
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, left 0.5s ease-in-out, border-radius 0.5s ease-in-out; /* border-radius 속성에도 transition을 추가 */
+    position: absolute;
+    left: 0%;
+    top: 0%;
 }
