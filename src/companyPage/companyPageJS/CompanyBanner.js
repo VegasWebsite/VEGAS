@@ -3,8 +3,7 @@ import "../companyPageCSS/companyBanner.css"
 
 function CompanyBanner(){
     return(
-        <div id="Banner">
-
+        <div id="banner">
         </div>
     )
 }

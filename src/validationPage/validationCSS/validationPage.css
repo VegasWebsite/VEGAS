@@ -1,3 +1,78 @@
 #validationPage {
+    width: 100%;
+    height: auto;
+}
+
+/*header*/
+#validationHeader {
+    width: 100%;
+    height: 15vh;
+    z-index: 1;
+}
+/*baner*/
+#validationBanner {
+    width: 100%;
+    height: 60vh; 
+}
+
+
+/*select img*/
+/* 글 정하기  */
+#validationOverviewSelect{
+    width: 100%;
+    height: 10vh;
+    z-index: 2;
+}
+
+/* 안 이미지 조절 */
+#validationview {
+    width: 100%;
+    height: auto;
+}
+
+#qualification{
+    width: 100%;
+    height: auto;
+}
+
+
+
+#companyOverview> img {
+    width: 100%;
+    height: auto;
+}
+.active{
+    display: block;
+	animation: formopen;
+	animation-duration: 1s;
     
+}
+.image{
+    opacity: 0;
+    display: none;
+}
+
+@keyframes formopen {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+
+/* 오시는 길 */
+#companyWaytoBackground{
+    width: 100%;
+    height: auto;
+}
+
+
+/* footer */
+
+#companyFooter {
+    width: 100%;
+    position: relative;
+    height: auto;
+    z-index: 1;
 }

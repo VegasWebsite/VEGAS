@@ -15,19 +15,19 @@ function MainHeader(){
 
             <div id="mainPageHeaderMenu">
 
-                <Link to="/companyPage" style={{ textDecoration: "none", color: "#ffffff"}}>
+                <Link to="/companyPage" style={{ textDecoration: "none", color: "#ffffff", fontFamily : "poppins"}}>
                     <p>Company</p>
                 </Link>
 
-                <Link to="/validationPage" style={{ textDecoration: "none", color: "#ffffff"}}>
+                <Link to="/validationPage" style={{ textDecoration: "none", color: "#ffffff", fontFamily : "poppins"}}>
                     <p>Validation</p>
                 </Link>
 
-                <Link to="/automationPage" style={{ textDecoration: "none", color: "#ffffff"}}>
+                <Link to="/automationPage" style={{ textDecoration: "none", color: "#ffffff", fontFamily : "poppins"}}>
                     <p>Automation</p>
                 </Link>
 
-                <Link to="/contactPage" style={{ textDecoration: "none", color: "#ffffff"}}>
+                <Link to="/contactPage" style={{ textDecoration: "none", color: "#ffffff", fontFamily : "poppins"}}>
                     <p>Contact</p>
                 </Link>
             </div>
