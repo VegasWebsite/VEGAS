@@ -1,9 +1,8 @@
-#mainBanner {
-    height: auto;
-    width: 100%;
-}
-
-#mainBanner > img{
-    width: 100%;
+#mainBanner{
     height: 100%;
+    width: 100%;
+    background-image: url("../mainPageIMG/mainbackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
