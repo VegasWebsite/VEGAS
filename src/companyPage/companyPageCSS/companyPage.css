@@ -1,12 +1,12 @@
 #companyPage {
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 /*header*/
 #companyHeader {
     width: 100%;
-    height: 15%;
+    height: 15vh;
     z-index: 1;
 }
 /*baner*/
@@ -19,7 +19,7 @@
 /*select img*/
 #companyOverviewSelect{
     width: 100%;
-    height: 10%;
+    height: 10vh;
     z-index: 2;
 }
 
@@ -33,7 +33,7 @@
 
 #companyOverview> img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .active{
     display: block;
@@ -66,6 +66,6 @@
 
 #companyFooter {
     width: 100%;
-    height: auto;
+    height: 30vh;
     z-index: 1;
 }

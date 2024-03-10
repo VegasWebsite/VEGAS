@@ -15,7 +15,7 @@ function CompanyHeader(){
         <div id="companyHeaderContiner">
 
             <div id="companyHeaderLogo">
-                <img src={imgLog} onClick={linkMain}></img>
+                <img src={imgLog} onClick={linkMain} loading="lazy"></img>
             </div>
 
             <div id="companyHeaderMenu">
