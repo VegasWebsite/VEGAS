@@ -1,8 +1,8 @@
-#companyBanner {
-    height: auto;
-    width: 100%;
-}
-#banner{
-    width: 100%;
+#Banner {
     height: 100%;
+    width: 100%;
+    background-image: url("../companyPageIMG//companyBanner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
