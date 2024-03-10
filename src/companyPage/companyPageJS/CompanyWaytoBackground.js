@@ -5,7 +5,6 @@ import HeadOfficeMap from "./HeadOfficeMap";
 import FactoryMap from "./FactoryMap";
 
 function CompanyWaytoBackground(props){
-    console.log(props.activeImage + "d");
     return(
         <div id="companyWayBackground">
             <img src={WaytoBackground} />

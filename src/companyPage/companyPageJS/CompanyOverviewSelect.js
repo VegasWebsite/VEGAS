@@ -3,7 +3,6 @@ import "../companyPageCSS/companyOverviewSelect.css";
 function CompanyOverviewSelect(props){
 
     const setParent = (v) => {
-        console.log(v + "click");
         props.onData(v);
     }
 

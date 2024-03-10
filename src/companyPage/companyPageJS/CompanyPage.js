@@ -15,17 +15,13 @@ import OrganizationChart from "../companyPageIMG/organizationChart.svg";
 function CompanyPage() {
 
     const [activeImage, setActiveImage] = useState(0);
-    console.log(activeImage +"active");
     const childData = (data) => {
-        console.log(data + "받아옴");
         showImage(data);
     }
 
 
     const showImage = (index) =>{
-        console.log(index);
         setActiveImage(index);
-
     }
     return (
         <div id="companyPage">

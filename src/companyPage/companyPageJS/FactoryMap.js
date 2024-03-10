@@ -3,11 +3,9 @@ import "../companyPageCSS/headOfficeMap.css";
 const {kakao} = window;
 
 function FactoryMap(props){
-    console.log(props.activeImage+"dd");
     const mapInstanceRef = useRef(null);
 
     useEffect(()=>{
-        console.log(useEffect);
         const container = document.getElementById("factory");
         const options ={
             center: new kakao.maps.LatLng(37.35327729999999 ,127.3554636),
