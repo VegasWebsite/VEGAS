@@ -6,7 +6,10 @@
     align-items: center;
     justify-content: space-between;
 }
-
+#companyHeaderLogo{
+    display: flex;
+    align-items: center;
+}
 #companyHeaderLogo> img{
     width: 7vw;
     cursor: pointer;

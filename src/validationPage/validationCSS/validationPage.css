@@ -36,11 +36,6 @@
 }
 
 
-
-#companyOverview> img {
-    width: 100%;
-    height: auto;
-}
 .active{
     display: block;
 	animation: formopen;
@@ -61,16 +56,11 @@
       }
   }
 
-/* 오시는 길 */
-#companyWaytoBackground{
-    width: 100%;
-    height: auto;
-}
 
 
 /* footer */
 
-#companyFooter {
+#validationFooter {
     width: 100%;
     position: relative;
     height: auto;
