@@ -8,10 +8,15 @@ function HeadOfficeMap(props){
     useEffect(()=>{
         const container = document.getElementById("map");
         const options ={
-            center: new kakao.maps.LatLng(37.4352544 ,127.1752188),
-            Level:4
+            center: new kakao.maps.LatLng(37.435177 ,127.175158),
+            level:4
         };
         const map = new kakao.maps.Map(container,options);
+        var markerPosition  = new kakao.maps.LatLng(37.435177 ,127.175158); 
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        marker.setMap(map);
         mapInstanceRef.current = map;
     
     },[]);
@@ -20,6 +25,8 @@ function HeadOfficeMap(props){
         const map = mapInstanceRef.current;
         if ( map && props.activeImage === 3) {
             map.relayout();
+            var moveLatLon = new kakao.maps.LatLng(37.435177 ,127.175158);
+            map.setCenter(moveLatLon);
         }
     }, [props.activeImage]);
     return(
