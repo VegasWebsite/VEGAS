@@ -1,8 +1,0 @@
-#validateBanner {
-    height: 100%;
-    width: 100%;
-    background-image: image-set(url("../validationIMG/validationBanner.svg"));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
