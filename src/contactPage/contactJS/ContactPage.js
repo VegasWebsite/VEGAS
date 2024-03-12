@@ -1,7 +1,7 @@
 import React from "react";
 import "../contactCSS/contactPage.css"
 import ConnectHeader from "./ContactHeader";
-import ContectBanner from "./ContectBnner";
+import ContectBanner from "./ContectBanner";
 import ContactUs from "./ContactUs";
 import CommonFooter from "../../util/utilJS/CommonFooter";
 function ContactPage() {
