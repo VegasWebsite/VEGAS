@@ -36,14 +36,14 @@ function CompanyOverviewSelect(props){
     
 
     return(
-        <div id="comPanyOverviewSelect">
-            <div id="selects">
+        <div className="comPanyOverviewSelect">
+            <div className="selects">
                 <p onClick={()=> setParent(0)}>기업 개요</p>
                 <p onClick={()=> setParent(1)}>대표자의말</p>
                 <p onClick={()=> setParent(2)}>조직도</p>
                 <p onClick={()=> setParent(3)}>오시는길</p>
             </div>
-            <div id="selecteBar">
+            <div className="selecteBar">
                 <div id="bar" className="bar">
 
                 </div>

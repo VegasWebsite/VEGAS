@@ -1,9 +1,29 @@
-#validationQulification{
+#validationQualification{
     width: 100%;
     height: auto; 
 }
 
-#validationQulification > img{
+#validationQualification > img{
     width: 100%;
     height: 100%;
+}
+
+#validationQualification > video {
+    width: 100%;
+    height: 100%;
+}
+
+.qualificationBottomIMG {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    align-items: flex-start;
+    padding-bottom: 8%;
+}
+
+.qualificationBottomIMG > img {
+    width: 25%;
 }
