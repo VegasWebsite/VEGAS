@@ -1,6 +1,6 @@
 import React  from "react";
 import "../contactCSS/contactBanner.css";
-import Banner from "../contactIMG/contactBanner.svg";
+import Banner from "../contactIMG/contactBanner.png";
 
 function ContectBanner() {
     return(

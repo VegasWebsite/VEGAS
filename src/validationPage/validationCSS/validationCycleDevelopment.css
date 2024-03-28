@@ -29,6 +29,7 @@
 
 .toggle {
     padding-left: 17%;
+    padding-bottom: 5%;
 }
 
 .toggle > img {
@@ -37,13 +38,13 @@
 
 
 .disable {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 .disable > img:nth-child(1){
     
-    width: 100%;
+    width: 80%;
     height: 100%;
 
 }
@@ -52,11 +53,11 @@
 }
 
 .acctive{
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 .acctive > img:nth-child(1){
-    width: 100%;
+    width: 80%;
     height: 100%;
 
 }

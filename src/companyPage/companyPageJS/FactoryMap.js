@@ -9,7 +9,7 @@ function FactoryMap(props){
         const container = document.getElementById("factory");
         const options ={
             center: new kakao.maps.LatLng(37.353414 ,127.355526),
-            level:4
+            level:3
         };
         const map = new kakao.maps.Map(container,options);
         var markerPosition  = new kakao.maps.LatLng(37.353414 ,127.355526); 

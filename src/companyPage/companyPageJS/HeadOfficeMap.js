@@ -9,7 +9,7 @@ function HeadOfficeMap(props){
         const container = document.getElementById("map");
         const options ={
             center: new kakao.maps.LatLng(37.435177 ,127.175158),
-            level:4
+            level:3
         };
         const map = new kakao.maps.Map(container,options);
         var markerPosition  = new kakao.maps.LatLng(37.435177 ,127.175158); 

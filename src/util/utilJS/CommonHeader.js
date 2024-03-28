@@ -16,19 +16,19 @@ function CommonHeader(){
 
             <div id="commonHeaderMenu">
 
-                <Link to="/companyPage " style={{ textDecoration: "none", color: "#000000"}}>
+                <Link to="/company" style={{ textDecoration: "none", color: "#000000"}}>
                     <p>Company</p>
                 </Link>
 
-                <Link to="/validationPage" >
+                <Link to="/validation" >
                     <p>Validation</p>
                 </Link>
 
-                <Link to="/automationPage">
+                <Link to="/automation">
                     <p>Automation</p>
                 </Link>
 
-                <Link to="/contactPage">
+                <Link to="/contact">
                     <p>Contact</p>
                 </Link>
             </div>

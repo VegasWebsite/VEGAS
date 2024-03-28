@@ -1,6 +1,6 @@
 import React from "react";
 import "../mainPageCSS/mainPageBanner.css";
-import Banner from "../mainPageIMG/mainbackground.svg";
+import Banner from "../mainPageIMG/mainbackground.png";
 
 function MainBanner(){
     return(

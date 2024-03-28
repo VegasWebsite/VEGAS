@@ -1,6 +1,6 @@
 import React from "react";
 import "../validationCSS/validationBanner.css";
-import Banner from "../validationIMG/validationBanner.svg";
+import Banner from "../validationIMG/validationBanner.png";
 
 function ValidationBanner(){
     return(

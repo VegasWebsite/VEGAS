@@ -11,10 +11,10 @@ function UserRouter(){
     return(
         <Routes>
             <Route path="/" element={<MainPage/>}/>
-            <Route path="/companyPage" element={<CompanyPage/>}/>
-            <Route path="/automationPage" element={<AutomationPage/>}/>
-            <Route path="/validationPage" element={<ValidationPage/>}/>
-            <Route path="/contactPage" element={<ContactPage/>}/>
+            <Route path="/company" element={<CompanyPage/>}/>
+            <Route path="/automation" element={<AutomationPage/>}/>
+            <Route path="/validation" element={<ValidationPage/>}/>
+            <Route path="/contact" element={<ContactPage/>}/>
         </Routes>
     )
 

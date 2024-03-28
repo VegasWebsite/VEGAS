@@ -17,7 +17,7 @@ function CompanyWaytoBackground(props){
 
                         </div>
                         <p>경기도 성남시 중원구 사가막골 62번길 33(성남 센터엠지식산업센터9층),904호</p>
-                        <p>00000</p>
+                        <p>13211</p>
 
                     </div>
                     <div id="companyMap2">
@@ -27,7 +27,7 @@ function CompanyWaytoBackground(props){
                             <FactoryMap activeImage ={props.activeImage}/>
                         </div>
                         <p>경기 광주시 곤지암을 곤지암리 108</p>
-                        <p>00000</p>   
+                        <p>12801</p>   
                         
                     </div>
 

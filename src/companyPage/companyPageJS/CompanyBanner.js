@@ -1,6 +1,6 @@
 import React from "react";
 import "../companyPageCSS/companyBanner.css"
-import Banner from "../companyPageIMG/companyBanner.svg";
+import Banner from "../companyPageIMG/companyBanner.png";
 
 function CompanyBanner(){
     return(
