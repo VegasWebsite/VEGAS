@@ -39,7 +39,6 @@ function ValidationOverviewSelect(props){
             </div>
         </div>
     );
-
 }
 
 export default ValidationOverviewSelect;
