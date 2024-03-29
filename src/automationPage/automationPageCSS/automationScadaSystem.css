@@ -1,0 +1,46 @@
+.automationScadaSystem {
+    width: 100%;
+    height: auto;
+}
+
+.automationScadaSystem > img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider{
+
+    height: auto;
+    width: auto;
+}
+.slider > div{
+    height: auto;
+    width: auto;
+}
+.slider > div > img{
+    position: relative;
+    left: 13%;
+    height: 20%;
+    width: 20%;
+    margin-bottom: 3%;
+}
+
+.slider > div > div{
+    position: relative;
+    left: 16.5%;
+    height: auto;
+    width: auto;
+    margin-bottom: 3%;
+}
+.silderimg{
+    width: 90%  !important;;
+    height: 50%;
+    margin-bottom: 3%;
+   
+}
+.silderimg2{
+    width: 90%  !important;;
+    height: 50%;
+    margin-bottom: 3%;
+}
+

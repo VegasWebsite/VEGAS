@@ -24,16 +24,16 @@ function CompanyHeader(){
                     <p>Company</p>
                 </Link>
 
-                <Link to="/validation" style={{ textDecoration: "none", color: "#000000", fontFamily : "poppins"}}>
-                    <p>Validation</p>
+                <Link to="/validation" style={{ textDecoration: "none", color: "#000000"}}>
+                    <p className="poppins-light">Validation</p>
                 </Link>
 
-                <Link to="/automation" style={{ textDecoration: "none", color: "#000000", fontFamily : "poppins"}}>
-                    <p>Automation</p>
+                <Link to="/automation" style={{ textDecoration: "none", color: "#000000"}}>
+                    <p className="poppins-light">Automation</p>
                 </Link>
 
-                <Link to="/contact" style={{ textDecoration: "none", color: "#000000",  fontFamily : "poppins" }}>
-                    <p>Contact</p>
+                <Link to="/contact" style={{ textDecoration: "none", color: "#000000"}}>
+                    <p className="poppins-light">Contact</p>
                 </Link>
             </div>
 

@@ -15,13 +15,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 #select>p{
     cursor: pointer;
+    width: 100%;
     font-family: pretendard;
     font-size: 0.95vw;
     font-weight: bold;
+    text-align: center;
 }
 
 .vselecteBar{

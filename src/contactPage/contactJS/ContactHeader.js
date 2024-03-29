@@ -20,16 +20,16 @@ function ConnectHeader(){
 
             <div id="companyHeaderMenu">
 
-                <Link to="/company" style={{ textDecoration: "none", color: "#000000", fontFamily : "poppins" }}>
-                    <p>Company</p>
+                <Link to="/company" style={{ textDecoration: "none", color: "#000000"}}>
+                    <p className="poppins-light">Company</p>
                 </Link>
 
-                <Link to="/validation" style={{ textDecoration: "none", color: "#000000", fontFamily : "poppins"}}>
-                    <p>Validation</p>
+                <Link to="/validation" style={{ textDecoration: "none", color: "#000000"}}>
+                    <p className="poppins-light">Validation</p>
                 </Link>
 
-                <Link to="/automation" style={{ textDecoration: "none", color: "#000000", fontFamily : "poppins"}}>
-                    <p>Automation</p>
+                <Link to="/automation" style={{ textDecoration: "none", color: "#000000"}}>
+                    <p className="poppins-light">Automation</p>
                 </Link>
 
                 <Link to="/contact" style={{ textDecoration: "none", color: "blue",  fontFamily : "poppins" }}>

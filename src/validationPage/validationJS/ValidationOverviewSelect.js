@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from 'react';
 import "../validationCSS/validationOverviewSelect.css";
-function validationOverviewSelect(props){
+
+function ValidationOverviewSelect(props){
+    const [selectedTab, setSelectedTab] = useState(0);
 
     const setParent = (v) => {
         const bar = document.getElementById("bar");
         props.onData(v);
         bar.style.width = '100%';
         bar.style.left = '0%';
+        setSelectedTab(v);
+
         setTimeout(()=>resetBar(v), 500);
     }
 
@@ -26,22 +30,16 @@ function validationOverviewSelect(props){
     return(
         <div className="validationOverviewSelect">
             <div id="select">
-                <p onClick={()=> setParent(0)}>Qualification</p>
-                <p onClick={()=> setParent(1)}>Cycle Development</p>
+                <p onClick={()=> setParent(0)} style={{fontWeight: selectedTab === 0 ? 600 : 'normal'}}>Qualification</p>
+                <p onClick={()=> setParent(1)} style={{fontWeight: selectedTab === 1 ? 600 : 'normal'}}>Cycle Development</p>
             </div>
             <div className="vselecteBar">
                 <div id="bar" className="vbar">
-
                 </div>
-
             </div>
-
         </div>
-        
-        
-    )
-
+    );
 
 }
 
-export default validationOverviewSelect;
+export default ValidationOverviewSelect;
