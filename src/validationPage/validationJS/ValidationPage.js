@@ -30,10 +30,10 @@ function ValidationPage() {
              </div>
 
              <div id="validationview">
-                <div id="qualification" className={activeImage == 0 ? 'active' : 'image'}>
+                <div id="qualification" className={activeImage === 0 ? 'active' : 'image'}>
                     <ValidationQualification />
                 </div>
-                <div id="cycleDevelopment" className={activeImage == 1 ? 'active' : 'image'}>
+                <div id="cycleDevelopment" className={activeImage === 1 ? 'active' : 'image'}>
                     <ValidationCycle/>
                 </div>
             </div>

@@ -24,7 +24,7 @@ function ValidationHeader(){
                     <p className="poppins-light">Company</p>
                 </Link>
 
-                <Link to="/validation" style={{ textDecoration: "none", color: "blue"}}>
+                <Link to="/validation" style={{ textDecoration: "none", color: "blue",  fontFamily : "poppins" }}>
                     <p>Validation</p>
                 </Link>
 
