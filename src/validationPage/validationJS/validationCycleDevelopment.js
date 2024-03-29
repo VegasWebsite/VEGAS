@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import "../validationCSS/validationCycleDevelopment.css";
 import CycleDevelopment1 from "../validationIMG/cycleDevelopment1.svg";
 import CycleDevelopment2 from "../validationIMG/cycleDevelopment2.svg";
 import CycleDevelopment3 from "../validationIMG/cycleDevelopment3.svg";
