@@ -70,75 +70,8 @@ function ValidationCycleDevelopment(){
   
  
     return(
-        <div className="validationCycleDevelopment">
-
-            <img src={CycleDevelopment1} loading="lazy"/>
-
-            <img src={CycleDevelopment2} loading="lazy"/>
-            <div className="VHPImages">
-                <img src={VHP1}/>
-                <img src={VHP2}/>
-            </div>
-
-            <img src={CycleDevelopment3} loading="lazy"/>
-
-            <img src={CycleDevelopment4} loading="lazy"/>
-            <div className="toggle">
-                {
-                    !active1  ?  <div className="disable">
-                    <img src={ToggleS1}  onClick={toggleS1Active} /> 
-               
-                    </div>
-                     :
-                    <div className="acctive">
-                         <img src={ToggleS1Act} onClick={toggleS1Active}/>
-                        
-                    </div>
-                    
-                }
-                <img src={ToggleS1Content}/>
-                {
-                    !active2  ? <div className="disable">
-                    <img src={ToggleS2}  onClick={toggleS2Active} /> 
-               
-                    </div>
-                    :
-                    <div className="acctive">
-                         <img src={ToggleS2Act} onClick={toggleS2Active}/>
-
-
-                    </div>
-                    
-                }
-                 <img src={ToggleS2Content}/>
-                {
-                    !active3  ? <div className="disable">
-                        <img src={ToggleS3}  onClick={toggleS3Active} /> 
-                   
-                   </div> :
-                    <div className="acctive">
-                         <img src={ToggleS3Act} onClick={toggleS3Active}/>
-
-                    </div>
-                    
-                }
-                <img src={ToggleS3Content}/>
-                {
-                    !active4  ? <div className="disable">
-                         <img src={ToggleS4}  onClick={toggleS4Active} /> 
-                        
-                        </div>
-                    :
-                    <div className="acctive">
-                         <img src={ToggleS4Act} onClick={toggleS4Active}/>
-                    </div>
-                    
-                }
-                 <img src={ToggleS4Content}/>
-            </div>
-
+        <div>
             
-
         </div>
     )
 
