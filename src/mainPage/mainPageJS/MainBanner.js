@@ -1,11 +1,11 @@
 import React from "react";
 import "../mainPageCSS/mainPageBanner.css";
-import Banner from "../mainPageIMG/mainbackground.png";
+import Text from "../mainPageIMG/mainText.svg"
 
 function MainBanner(){
     return(
-        <div id="banner">
-            <img src = {Banner}/>
+        <div className="mainBanner">
+            <img src = {Text} className="mainText"/>
         </div>
     )
 }

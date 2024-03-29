@@ -1,0 +1,15 @@
+.mainBanner {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url("../mainPageIMG/mainbackground.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainText {
+    width: 40%;
+    z-index: 1;
+}
+
