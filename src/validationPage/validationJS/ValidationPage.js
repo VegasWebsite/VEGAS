@@ -5,7 +5,7 @@ import ValidationHeader from "./ValidationHeader";
 import ValidationBanner from "./ValidationBanner";
 import ValidationOverviewSelect from "./ValidationOverviewSelect";
 import ValidationQualification from "./ValidationQualification";
-import ValidationCycleDevelopment from "./ValidationCycleDevelopment";
+//import ValidationCycleDevelopment from "./ValidationCycleDevelopment";
 
 function ValidationPage() {
     const [activeImage, setActiveImage] = useState(0);
@@ -34,7 +34,7 @@ function ValidationPage() {
                     <ValidationQualification />
                 </div>
                 <div id="cycleDevelopment" className={activeImage == 1 ? 'active' : 'image'}>
-                    <ValidationCycleDevelopment />
+                    
                 </div>
             </div>
              <div id="validationFooter">
