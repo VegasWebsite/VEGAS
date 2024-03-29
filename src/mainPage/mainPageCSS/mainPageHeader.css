@@ -16,7 +16,19 @@
 #mainPageHeaderMenu {
     width: 30%;
     display: flex;
-    color: #ffffff;
     font-size: 1vw;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+
+	#mainPageHeaderLogo> img{
+        width: 10vw;
+    }
+    
+    #mainPageHeaderMenu {
+        width: 60%;
+        display: flex;
+        font-size: 1.7vw;
+    }
 }

@@ -3,6 +3,8 @@
     width: 100%;
     position: relative;
     background-image: url("../mainPageIMG/mainbackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;

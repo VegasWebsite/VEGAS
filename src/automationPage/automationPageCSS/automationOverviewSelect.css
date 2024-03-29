@@ -43,3 +43,9 @@
     left: 0%;
     top: 0%;
 }
+
+@media screen and (max-width: 900px) {
+    .selects > p{
+        font-size: 1.7vw;
+    }
+}

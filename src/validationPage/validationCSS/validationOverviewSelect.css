@@ -7,7 +7,7 @@
     height: 100%;
 }
 
-#select{
+.selects{
     width: 38%;
     height: 70%;
     margin: auto;
@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-#select>p{
+.selects>p{
     cursor: pointer;
     width: 100%;
     font-family: pretendard;
@@ -42,4 +42,11 @@
     position: absolute;
     left: 0%;
     top: 0%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .selects > p{
+        font-size: 1.7vw;
+    }
 }

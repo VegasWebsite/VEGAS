@@ -18,7 +18,6 @@
 #companyHeaderMenu {
     width: 30%;
     display: flex;
-    color: #ffffff;
     font-size: 1vw;
     justify-content: space-between;
 }
@@ -27,5 +26,18 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
+}
 
+
+@media screen and (max-width: 900px) {
+
+	#companyHeaderLogo> img{
+        width: 10vw;
+    }
+    
+    #companyHeaderMenu {
+        width: 60%;
+        display: flex;
+        font-size: 1.7vw;
+    }
+}

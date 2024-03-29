@@ -37,10 +37,6 @@ function ContactUs() {
                     <img src={MailBox}/>
                     <p id="mail">info@vegasinc.co.kr</p>
                 </div>
-                
-                
-                
-              
             </div>
 
             <img src={ContactBody3}/>

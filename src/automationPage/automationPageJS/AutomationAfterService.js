@@ -1,10 +1,10 @@
 import React from "react";
 
-import "../automationPageCSS/automationAfterService.css"
 import AfterService1 from "../automationPageIMG/afterService1.svg"
 import AfterServiceHyperLink from "../automationPageIMG/afterServiceHyperLink.svg"
 import AfterService2 from "../automationPageIMG/afterService2.svg"
 import AfterService3 from "../automationPageIMG/afterService3.svg"
+import "../automationPageCSS/automationAfterService.css";
 
 function AutomationAfterService() {
 
