@@ -19,9 +19,7 @@
 }
 .slider > div > img{
     position: relative;
-    left: 13%;
-    height: 20%;
-    width: 20%;
+    width: 100%;
     margin-bottom: 3%;
 }
 
