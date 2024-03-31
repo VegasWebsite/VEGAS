@@ -15,7 +15,7 @@ function ValidationQualification(){
         <div id="validationQualification">
 
             <img src={Qualification1} loading="lazy"/>
-            <video muted autoPlay loop>
+            <video muted autoPlay loop playsInline>
                 <source src={QualificationVideo} type="video/mp4"/>
             </video>
             <img src={Qualification3} loading="lazy"/>

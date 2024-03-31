@@ -36,12 +36,12 @@ function AutomationOverviewSelect(props){
 
     return(
         <div className="automationOverviewSelects">
-            <div className="selects">
+            <div className="aselects">
                 <p onClick={()=> setParent(0)} style={{fontWeight: selectedTab === 0 ? 600 : 'normal'}}>SCADA SYSTEM</p>
                 <p onClick={()=> setParent(1)} style={{fontWeight: selectedTab === 1 ? 600 : 'normal'}}>After Service</p>
                 <p onClick={()=> setParent(2)} style={{fontWeight: selectedTab === 2 ? 600 : 'normal'}}>EMS</p>
             </div>
-            <div className="selecteBar">
+            <div className="aselecteBar">
                 <div id="bar" className="automationOverviewbar">
 
                 </div>

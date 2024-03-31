@@ -18,9 +18,11 @@
 
 .selects>p{
     cursor: pointer;
-    font-weight: bold;
+    width: 100%;
     font-family: pretendard;
-    font-size: 1vw;
+    font-size: 0.95vw;
+    font-weight: bold;
+    text-align: center;
 }
 
 .selecteBar{

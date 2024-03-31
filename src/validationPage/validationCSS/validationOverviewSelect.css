@@ -7,7 +7,7 @@
     height: 100%;
 }
 
-.selects{
+.vselects{
     width: 38%;
     height: 70%;
     margin: auto;
@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-.selects>p{
+.vselects>p{
     cursor: pointer;
     width: 100%;
     font-family: pretendard;

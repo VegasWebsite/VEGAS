@@ -9,6 +9,7 @@ import ScadaSystem3 from "../automationPageIMG/scadaSystem3.svg"
 import ScadaSystem4 from "../automationPageIMG/scadaSystem4.svg"
 import ScadaSystem5 from "../automationPageIMG/scadaSystem5.svg"
 import ScadaSystem6 from "../automationPageIMG/scadaSystem6.svg"
+import ScadaSystem7 from "../automationPageIMG/scadaSystem7.svg"
 import SiemensWincc from "../automationPageIMG/siemensWincc.svg"
 import SiemensWincc1 from "../automationPageIMG/siemensWincc1.svg"
 import SiemensWincc2 from "../automationPageIMG/siemensWincc2.svg"
@@ -111,10 +112,9 @@ function AutomationScadaSystem() {
                         </Slider>  
                     </div>
                 </div>
-           
-
             </div>
             
+            <img src={ScadaSystem7} loading="lazy"/>
         </div>
     )
 }

@@ -29,7 +29,7 @@ function ValidationOverviewSelect(props){
 
     return(
         <div className="validationOverviewSelect">
-            <div className="selects">
+            <div className="vselects">
                 <p onClick={()=> setParent(0)} style={{fontWeight: selectedTab === 0 ? 600 : 'normal'}}>Qualification</p>
                 <p onClick={()=> setParent(1)} style={{fontWeight: selectedTab === 1 ? 600 : 'normal'}}>Cycle Development</p>
             </div>
