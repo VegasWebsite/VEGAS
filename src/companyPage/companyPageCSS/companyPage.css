@@ -70,3 +70,9 @@
     height: auto;
     z-index: 1;
 }
+
+@media screen and (max-width: 900px) {
+    #companyHeader {
+        height: 8vh;
+    }
+}

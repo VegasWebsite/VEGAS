@@ -26,3 +26,10 @@
     height: auto;
     z-index: 1;
 }
+
+
+@media screen and (max-width: 900px) {
+    #contactHeader {
+        height: 8vh;
+    }
+}

@@ -45,7 +45,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .selects > p{
-        font-size: 1.7vw;
+    .aselects > p{
+        font-size: 2.0vw;
     }
 }
