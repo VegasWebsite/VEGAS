@@ -12,9 +12,10 @@ import CompanyWaytoBackground from "./CompanyWaytoBackground";
 import CompanyOverview from "../companyPageIMG/companyOverview.svg";
 import Ceo from "../companyPageIMG/ceo.svg";
 import OrganizationChart from "../companyPageIMG/organizationChart.svg";
-import MCompanyOverview from "../companyPageIMG/mobileIMG/mCompanyOverview.svg"
-import MCEO from "../companyPageIMG/mobileIMG/mCEO.svg"
-import MOrganizationChart from "../companyPageIMG/mobileIMG/mOrganizationChart.svg"
+import MCompanyOverview from "../companyPageIMG/mobileIMG/mCompanyOverview.svg";
+import MCompanyOverview2 from "../companyPageIMG/mobileIMG/mCompanyOverview2.svg";
+import MCEO from "../companyPageIMG/mobileIMG/mCEO.svg";
+import MOrganizationChart from "../companyPageIMG/mobileIMG/mOrganizationChart.svg";
 
 
 function CompanyPage() {
@@ -57,7 +58,7 @@ function CompanyPage() {
             <div id="companyOverview">
                 {(screenWidth <= 900) ? (
                     <>
-                        <img src={MCompanyOverview} className={activeImage === 0 ? 'active' : 'image'} />
+                        <img src={MCompanyOverview2} className={activeImage === 0 ? 'active' : 'image'} />
                         <img src={MCEO} className={activeImage === 1 ? 'active' : 'image'} />
                         <img src={MOrganizationChart} className={activeImage === 2 ? 'active' : 'image'} />
                         <div id="companyWaytoBackground" className={activeImage === 3 ? 'active' : 'image'}>

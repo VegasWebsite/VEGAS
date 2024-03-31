@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from "react";
 import "../companyPageCSS/companyWayBackground.css";
 import WaytoBackground from "../companyPageIMG/waytoBackground.svg";
-import MWaytoBackGround from "../companyPageIMG/mobileIMG/mWaytoBackground.svg"
+import MWaytoBackGround from "../companyPageIMG/mobileIMG/mWaytoBackground.svg";
 import HeadOfficeMap from "./HeadOfficeMap";
 import FactoryMap from "./FactoryMap";
 
