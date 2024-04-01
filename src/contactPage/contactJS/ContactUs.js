@@ -1,6 +1,6 @@
 import React, { useEffect }  from "react";
-import ContactBody1 from "../contactIMG/contactBody1.svg";
-import ContactBody3 from "../contactIMG/contactBody3.svg";
+import ContactBody1 from "../contactIMG/contactBody1.png";
+import ContactBody3 from "../contactIMG/contactBody3.png";
 import CallBox from "../contactIMG/callBox.svg";
 import MailBox from "../contactIMG/mailBox.svg";
 import "../contactCSS/contactBody.css";
