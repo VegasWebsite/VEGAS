@@ -28,3 +28,17 @@
     width: 25%;
 }
 
+.mQualificationBottomIMG {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    align-items:flex-start;
+    padding-bottom: 8%;
+}
+
+.mQualificationBottomIMG > img {
+    width: 70%;
+}

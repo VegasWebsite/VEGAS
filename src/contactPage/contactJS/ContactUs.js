@@ -1,45 +1,81 @@
-import React, { useEffect }  from "react";
+import React, { useState, useEffect } from "react";
+
 import ContactBody1 from "../contactIMG/contactBody1.png";
 import ContactBody3 from "../contactIMG/contactBody3.png";
 import CallBox from "../contactIMG/callBox.svg";
 import MailBox from "../contactIMG/mailBox.svg";
 import "../contactCSS/contactBody.css";
 
+import MContactBody1 from "../contactIMG/mobileIMG/mContactBody1.svg";
+import MContactBody3 from "../contactIMG/mobileIMG/mContactBody3.svg";
+
 
 function ContactUs() {
 
-    useEffect(()=>{
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
+    useEffect(() => {
         let callNum = document.getElementById("callNumber");
         let mail = document.getElementById("mail");
 
-        callNum.addEventListener('click',() =>{
+        callNum.addEventListener('click', () => {
             window.navigator.clipboard.writeText(callNum.textContent);
         })
-        mail.addEventListener('click',() =>{
+        mail.addEventListener('click', () => {
             window.navigator.clipboard.writeText(mail.textContent);
         })
+    }, [])
 
 
-
-    },[])
-    
-   
-    return(
+    return (
         <div id="body">
-            <img src={ContactBody1}/>
+            {(screenWidth <= 900) ? (
+                <>
+                    <img src={MContactBody1} />
 
-            <div className="contactNumber">
-                <div>
-                    <img src={CallBox}/>
-                    <p id="callNumber">031-620-5949</p>
-                </div>
-                <div>
-                    <img src={MailBox}/>
-                    <p id="mail">info@vegasinc.co.kr</p>
-                </div>
-            </div>
+                    <div className="mContactNumber">
+                        <div>
+                            <img src={CallBox} />
+                            <p id="callNumber">031-620-5949</p>
+                        </div>
+                        <div>
+                            <img src={MailBox} />
+                            <p id="mail">info@vegasinc.co.kr</p>
+                        </div>
+                    </div>
 
-            <img src={ContactBody3}/>
+                    <img src={MContactBody3} />
+                </>
+            ) : (
+                <>
+                    <img src={ContactBody1} />
+
+                    <div className="contactNumber">
+                        <div>
+                            <img src={CallBox} />
+                            <p id="callNumber">031-620-5949</p>
+                        </div>
+                        <div>
+                            <img src={MailBox} />
+                            <p id="mail">info@vegasinc.co.kr</p>
+                        </div>
+                    </div>
+
+                    <img src={ContactBody3} />
+                </>
+            )}
+
         </div>
     )
 }

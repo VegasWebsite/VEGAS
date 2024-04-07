@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 
 
@@ -28,7 +28,34 @@ import BuleOpen4 from "../automationPageIMG/BlueOpen4.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import MScadaSystem1 from "../automationPageIMG/mobileIMG/mScadaSystem1.svg"
+import MScadaSystem1_1 from "../automationPageIMG/mobileIMG/mScadaSystem1-1.png"
+import MScadaSystem2 from "../automationPageIMG/mobileIMG/mScadaSystem2.svg"
+import MScadaSystem3 from "../automationPageIMG/mobileIMG/mScadaSystem3.png"
+import MScadaSystem4 from "../automationPageIMG/mobileIMG/mScadaSystem4.png"
+import MScadaSystem5 from "../automationPageIMG/mobileIMG/mScadaSystem5.png"
+import MScadaSystem6 from "../automationPageIMG/mobileIMG/mScadaSystem6.png"
+import MScadaSystem7 from "../automationPageIMG/mobileIMG/mScadaSystem7.png"
+import MSiemensWincc from "../automationPageIMG/mobileIMG/mSiemensWincc.svg"
+import MScheniderintouch from "../automationPageIMG/mobileIMG/mSchneiderIntouch.svg"
+
 function AutomationScadaSystem() {
+
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const goLink = () => {
+        window.location.href = "https://grmetal.co.kr/";
+    }
 
     const settings = {
         dots: false,
@@ -36,85 +63,143 @@ function AutomationScadaSystem() {
         speed: 4000,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay : true,
+        autoplay: true,
         autoplaySpeed: 4000,
-        
-        
-      };
 
-      const settings2 = {
+
+    };
+
+    const settings2 = {
         dots: false,
         infinite: true,
         speed: 4100,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay : true,
+        autoplay: true,
         autoplaySpeed: 4100,
         centerPadding: '0px'
-        
-      };
 
-      const settings3 = {
+    };
+
+    const settings3 = {
         dots: false,
         infinite: true,
         speed: 4000,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay : true,
+        autoplay: true,
         autoplaySpeed: 4000,
-        
-        
-      };
-   
+
+
+    };
+
 
     return (
         <div className="automationScadaSystem">
-            <img src={ScadaSystem1} loading="lazy"/>
-            <img src={ScadaSystem2} loading="lazy"/>
-            <img src={ScadaSystem3} loading="lazy"/>
-            <img src={ScadaSystem4} loading="lazy"/>
-            <img src={ScadaSystem5} loading="lazy"/>
-            <img src={ScadaSystem6} loading="lazy"/>
 
-            <div className="slider">
-                <div>
-                    <img src={SiemensWincc} />
-                    <div>
-                        <Slider {...settings}>
-                            <img src={SiemensWincc1} className="silderimg"/>
-                            <img src={SiemensWincc2}  className="silderimg"/>
-                            <img src={SiemensWincc3}  className="silderimg"/>
-                            <img src={SiemensWincc4}  className="silderimg"/>
-                        </Slider>  
-                    </div>
-                </div>
+            {(screenWidth <= 900) ? (
+                <>
+                    <img src={MScadaSystem1} loading="lazy" />
+                    <img src={MScadaSystem1_1} loading="lazy" />
+                    <img src={MScadaSystem2} loading="lazy" />
+                    <img src={MScadaSystem3} loading="lazy" />
+                    <img src={MScadaSystem4} loading="lazy" />
+                    <img src={MScadaSystem5} loading="lazy" />
+                    <img src={MScadaSystem6} loading="lazy" />
 
-                <div>
-                    <img src={Scheniderintouch} />
-                    <div>
-                        <Slider {...settings2}>
-                            <img src={Scheniderintouch1} className="silderimg"/>
-                            <img src={Scheniderintouch2}  className="silderimg"/>
-                            <img src={Scheniderintouch3}  className="silderimg"/>
-                            <img src={Scheniderintouch4}  className="silderimg"/>
-                        </Slider>  
-                    </div>
-                </div>
+                    <div className="slider">
+                        <div>
+                            <img src={MSiemensWincc} />
+                            <div>
+                                <Slider {...settings}>
+                                    <img src={SiemensWincc1} className="silderimg" />
+                                    <img src={SiemensWincc2} className="silderimg" />
+                                    <img src={SiemensWincc3} className="silderimg" />
+                                    <img src={SiemensWincc4} className="silderimg" />
+                                </Slider>
+                            </div>
+                        </div>
 
-                <div>
-                    <img src={BuleOpen} />
-                    <div>
-                        <Slider {...settings3}>
-                            <img src={BuleOpen1} className="silderimg2"/>
-                            <img src={BuleOpen2}  className="silderimg2"/>
-                            <img src={BuleOpen3}  className="silderimg2"/>
-                            <img src={BuleOpen4}  className="silderimg2"/>
-                        </Slider>  
+                        <div>
+                            <img src={MScheniderintouch} />
+                            <div>
+                                <Slider {...settings2}>
+                                    <img src={Scheniderintouch1} className="silderimg" />
+                                    <img src={Scheniderintouch2} className="silderimg" />
+                                    <img src={Scheniderintouch3} className="silderimg" />
+                                    <img src={Scheniderintouch4} className="silderimg" />
+                                </Slider>
+                            </div>
+                        </div>
+
+                        // TODO : 슬라이딩 맞추고 세번째 소제목 수정해서 올리기
+                        <div>
+                            <img src={BuleOpen} />
+                            <div>
+                                <Slider {...settings3}>
+                                    <img src={BuleOpen1} className="silderimg2" />
+                                    <img src={BuleOpen2} className="silderimg2" />
+                                    <img src={BuleOpen3} className="silderimg2" />
+                                    <img src={BuleOpen4} className="silderimg2" />
+                                </Slider>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <img src={ScadaSystem7} loading="lazy"/>
+
+                    <img src={MScadaSystem7} loading="lazy" />
+                </>
+            ) : (
+                <>
+                    <img src={ScadaSystem1} loading="lazy" />
+                    <img src={ScadaSystem2} loading="lazy" />
+                    <img src={ScadaSystem3} loading="lazy" />
+                    <img src={ScadaSystem4} loading="lazy" />
+                    <img src={ScadaSystem5} loading="lazy" />
+                    <img src={ScadaSystem6} loading="lazy" />
+
+                    <div className="slider">
+                        <div>
+                            <img src={SiemensWincc} />
+                            <div>
+                                <Slider {...settings}>
+                                    <img src={SiemensWincc1} className="silderimg" />
+                                    <img src={SiemensWincc2} className="silderimg" />
+                                    <img src={SiemensWincc3} className="silderimg" />
+                                    <img src={SiemensWincc4} className="silderimg" />
+                                </Slider>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src={Scheniderintouch} />
+                            <div>
+                                <Slider {...settings2}>
+                                    <img src={Scheniderintouch1} className="silderimg" />
+                                    <img src={Scheniderintouch2} className="silderimg" />
+                                    <img src={Scheniderintouch3} className="silderimg" />
+                                    <img src={Scheniderintouch4} className="silderimg" />
+                                </Slider>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src={BuleOpen} />
+                            <div>
+                                <Slider {...settings3}>
+                                    <img src={BuleOpen1} className="silderimg2" />
+                                    <img src={BuleOpen2} className="silderimg2" />
+                                    <img src={BuleOpen3} className="silderimg2" />
+                                    <img src={BuleOpen4} className="silderimg2" />
+                                </Slider>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src={ScadaSystem7} loading="lazy" />
+                </>
+            )}
+
+
         </div>
     )
 }
