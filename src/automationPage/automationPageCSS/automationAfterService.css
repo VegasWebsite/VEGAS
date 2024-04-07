@@ -23,6 +23,16 @@
     height: auto;
 }
 
+.hoverLink {
+    text-align: center;
+    margin-bottom: 10vb;
+    cursor: pointer;
+}
+.hoverLink > img {
+    width: 40%;
+    height: auto;
+}
+
 
 .additionalIMG {
     text-align: center;

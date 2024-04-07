@@ -30,6 +30,18 @@ function AutomationAfterService() {
     }
 
 
+
+    const [isHovering, setIsHovering] = useState(false);
+    const handleMouseOver = () => {
+        setIsHovering(true);
+    };
+
+    const handleMouseOut = () => {
+        setIsHovering(false);
+    };
+
+
+
     return (
         <div className="automationAfterService">
             {(screenWidth <= 900) ? (
@@ -50,7 +62,10 @@ function AutomationAfterService() {
                     <div className="afterService1">
                         <img src={AfterService1} loading="lazy" />
                     </div>
-                    <div className="hyperLink">
+                    <div className={isHovering ? "hoverLink" : "hyperLink"}
+                        onMouseOver={handleMouseOver}
+                        onMouseOut={handleMouseOut}
+                    >
                         <img onClick={goLink} src={AfterServiceHyperLink} loading="lazy" />
                     </div>
                     <div className="additionalIMG">
