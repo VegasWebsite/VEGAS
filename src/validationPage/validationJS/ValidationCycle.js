@@ -108,7 +108,7 @@ function ValidationCycle() {
                     <img src={MCycleDevelopment1} loading="lazy" />
 
                     <img src={MCycleDevelopment2} loading="lazy" />
-                    // TODO : VHP 사진 크기 조정 
+                   
                     <div className="VHPImages">
                         <img src={VHP1} />
                         <img src={VHP2} />
