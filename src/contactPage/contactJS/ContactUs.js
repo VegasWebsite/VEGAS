@@ -31,9 +31,11 @@ function ContactUs() {
 
         callNum.addEventListener('click', () => {
             window.navigator.clipboard.writeText(callNum.textContent);
+            alert("복사되었습니다.");
         })
         mail.addEventListener('click', () => {
             window.navigator.clipboard.writeText(mail.textContent);
+            alert("복사되었습니다.");
         })
     }, [])
 
