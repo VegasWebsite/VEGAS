@@ -103,3 +103,7 @@
     font-family: Pretendard;
     user-select: all;
 }
+
+.contactNumber > div :hover{
+    cursor: pointer;
+}

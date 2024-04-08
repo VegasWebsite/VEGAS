@@ -47,13 +47,13 @@ function ContactUs() {
                     <img src={MContactBody1} />
 
                     <div className="mContactNumber">
-                        <div>
+                        <div id="callNumber">
                             <img src={CallBox} />
-                            <p id="callNumber">031-620-5949</p>
+                            <p>031-620-5949</p>
                         </div>
-                        <div>
+                        <div id="mail">
                             <img src={MailBox} />
-                            <p id="mail">info@vegasinc.co.kr</p>
+                            <p>info@vegasinc.co.kr</p>
                         </div>
                     </div>
 
@@ -64,13 +64,13 @@ function ContactUs() {
                     <img src={ContactBody1} />
 
                     <div className="contactNumber">
-                        <div>
+                        <div id="callNumber">
                             <img src={CallBox} />
-                            <p id="callNumber">031-620-5949</p>
+                            <p>031-620-5949</p>
                         </div>
-                        <div>
+                        <div id="mail">
                             <img src={MailBox} />
-                            <p id="mail">info@vegasinc.co.kr</p>
+                            <p>info@vegasinc.co.kr</p>
                         </div>
                     </div>
 
