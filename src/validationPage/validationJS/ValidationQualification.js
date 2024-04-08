@@ -38,7 +38,7 @@ function ValidationQualification() {
                     </video>
                     <img src={MQualification3} loading="lazy" />
 
-                    // TODO : QualificationBottom images 정렬
+                    
                     <div className="mQualificationBottomIMG">
                         <img src={QualificationBottom1} />
                         <img src={QualificationBottom2} />

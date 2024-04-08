@@ -20,11 +20,11 @@ import Scheniderintouch1 from "../automationPageIMG/schneiderIntouch1.png"
 import Scheniderintouch2 from "../automationPageIMG/schneiderIntouch2.png"
 import Scheniderintouch3 from "../automationPageIMG/schneiderIntouch3.png"
 import Scheniderintouch4 from "../automationPageIMG/schneiderIntouch4.png"
-import BuleOpen from "../automationPageIMG/BlueOpen.svg"
-import BuleOpen1 from "../automationPageIMG/BlueOpen1.png"
-import BuleOpen2 from "../automationPageIMG/BlueOpen2.png"
-import BuleOpen3 from "../automationPageIMG/BlueOpen3.png"
-import BuleOpen4 from "../automationPageIMG/BlueOpen4.png"
+import BlueOpen from "../automationPageIMG/BlueOpen.svg"
+import BlueOpen1 from "../automationPageIMG/BlueOpen1.png"
+import BlueOpen2 from "../automationPageIMG/BlueOpen2.png"
+import BlueOpen3 from "../automationPageIMG/BlueOpen3.png"
+import BlueOpen4 from "../automationPageIMG/BlueOpen4.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -38,14 +38,24 @@ import MScadaSystem6 from "../automationPageIMG/mobileIMG/mScadaSystem6.png"
 import MScadaSystem7 from "../automationPageIMG/mobileIMG/mScadaSystem7.png"
 import MSiemensWincc from "../automationPageIMG/mobileIMG/mSiemensWincc.svg"
 import MScheniderintouch from "../automationPageIMG/mobileIMG/mSchneiderIntouch.svg"
+import MBlueOpen from "../automationPageIMG/mobileIMG/mBlueOpen.svg"
 
 function AutomationScadaSystem() {
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
-
+    const [show , setShow] = useState(4);
+    const [show2 , setShow2] = useState(3);
     useEffect(() => {
         const handleResize = () => {
-            setScreenWidth(window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+            const newWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            setScreenWidth(newWidth);
+            if(newWidth<=900){
+                setShow(2);
+                setShow2(2);
+            }else{
+                setShow(4);
+                setShow2(3);
+            }
         };
         window.addEventListener('resize', handleResize);
         return () => {
@@ -61,7 +71,7 @@ function AutomationScadaSystem() {
         dots: false,
         infinite: true,
         speed: 4000,
-        slidesToShow: 4,
+        slidesToShow: show,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
@@ -73,7 +83,7 @@ function AutomationScadaSystem() {
         dots: false,
         infinite: true,
         speed: 4100,
-        slidesToShow: 4,
+        slidesToShow: show,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4100,
@@ -85,7 +95,7 @@ function AutomationScadaSystem() {
         dots: false,
         infinite: true,
         speed: 4000,
-        slidesToShow: 3,
+        slidesToShow: show2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
@@ -132,15 +142,15 @@ function AutomationScadaSystem() {
                             </div>
                         </div>
 
-                        // TODO : 슬라이딩 맞추고 세번째 소제목 수정해서 올리기
+                       
                         <div>
-                            <img src={BuleOpen} />
+                            <img src={MBlueOpen} />
                             <div>
                                 <Slider {...settings3}>
-                                    <img src={BuleOpen1} className="silderimg2" />
-                                    <img src={BuleOpen2} className="silderimg2" />
-                                    <img src={BuleOpen3} className="silderimg2" />
-                                    <img src={BuleOpen4} className="silderimg2" />
+                                    <img src={BlueOpen1} className="silderimg2" />
+                                    <img src={BlueOpen2} className="silderimg2" />
+                                    <img src={BlueOpen3} className="silderimg2" />
+                                    <img src={BlueOpen4} className="silderimg2" />
                                 </Slider>
                             </div>
                         </div>
@@ -183,13 +193,13 @@ function AutomationScadaSystem() {
                         </div>
 
                         <div>
-                            <img src={BuleOpen} />
+                            <img src={BlueOpen} />
                             <div>
                                 <Slider {...settings3}>
-                                    <img src={BuleOpen1} className="silderimg2" />
-                                    <img src={BuleOpen2} className="silderimg2" />
-                                    <img src={BuleOpen3} className="silderimg2" />
-                                    <img src={BuleOpen4} className="silderimg2" />
+                                    <img src={BlueOpen1} className="silderimg2" />
+                                    <img src={BlueOpen2} className="silderimg2" />
+                                    <img src={BlueOpen3} className="silderimg2" />
+                                    <img src={BlueOpen4} className="silderimg2" />
                                 </Slider>
                             </div>
                         </div>

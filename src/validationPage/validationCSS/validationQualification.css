@@ -42,3 +42,22 @@
 .mQualificationBottomIMG > img {
     width: 70%;
 }
+
+@media screen and (max-width: 900px) {
+    .mQualificationBottomIMG > img {
+        margin-top: 5%;
+        width: 60%;
+        height: 10%;
+    }
+    .mQualificationBottomIMG {
+        height: auto;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10%;
+        align-items:center;
+        padding-bottom: 10%;
+    }
+}
