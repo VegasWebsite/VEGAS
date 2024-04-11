@@ -207,8 +207,8 @@ function ValidationCycle() {
 
                         }
                         <div className="toggleVideo">
-                            <img src={ToggleS1Content1} />
-                            <img src={ToggleS1Content2} />
+                            <img src={ToggleS1Content1} className="s11"/>
+                            <img src={ToggleS1Content2} className="s12"/>
                             <video muted autoPlay loop playsInline>
                                 <source src={ToggleS1Video} type="video/mp4" />
                             </video>
