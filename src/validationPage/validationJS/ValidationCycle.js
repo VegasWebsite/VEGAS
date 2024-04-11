@@ -14,8 +14,9 @@ import MCycleDevelopment4 from "../validationIMG/mobileIMG/mCycleDevelopment4.sv
 import VHP1 from "../validationIMG/VHP1.svg";
 import VHP2 from "../validationIMG/VHP2.svg";
 import ToggleS1 from "../validationIMG/toggleS1.svg";
-import ToggleS1Act from "../validationIMG/toggleS1Act.svg"
-import ToggleS1Content from "../validationIMG/toggleS1Content.png";
+import ToggleS1Act from "../validationIMG/toggleS1Act.svg";
+import ToggleS1Content1 from "../validationIMG/toggleS1Content1.png";
+import ToggleS1Content2 from "../validationIMG/toggleS1Content2.png";
 import ToggleS2 from "../validationIMG/toggleS2.svg";
 import ToggleS2Act from "../validationIMG/toggleS2Act.svg"
 import ToggleS2Content from "../validationIMG/toggleS2Content.png";
@@ -38,6 +39,8 @@ import MToggleS3Content from "../validationIMG/mobileIMG/mToggleS3Content.png";
 import MToggleS4 from "../validationIMG/mobileIMG/mToggleS4.svg";
 import MToggleS4Act from "../validationIMG/mobileIMG/mToggleS4Act.svg";
 import MToggleS4Content from "../validationIMG/mobileIMG/mToggleS4Content.png";
+
+import ToggleS1Video from "../validationIMG/toggleS1Video.mp4"
 
 import "../validationCSS/validationCycleDevelopment.css";
 
@@ -130,7 +133,12 @@ function ValidationCycle() {
                                 </div>
 
                         }
-                        <img src={MToggleS1Content} />
+                        <div className="mToggleVideo">
+                            <img src={MToggleS1Content} />
+                            <video muted autoPlay loop playsInline>
+                                <source src={ToggleS1Video} type="video/mp4"/>
+                            </video>
+                        </div>
                         {
                             !active2 ? <div className="MDisable">
                                 <img src={MToggleS2} onClick={toggleS2Active} />
@@ -198,7 +206,13 @@ function ValidationCycle() {
                                 </div>
 
                         }
-                        <img src={ToggleS1Content} />
+                        <div className="toggleVideo">
+                            <img src={ToggleS1Content1} />
+                            <img src={ToggleS1Content2} />
+                            <video muted autoPlay loop playsInline>
+                                <source src={ToggleS1Video} type="video/mp4" />
+                            </video>
+                        </div>
                         {
                             !active2 ? <div className="disable">
                                 <img src={ToggleS2} onClick={toggleS2Active} />
@@ -207,8 +221,6 @@ function ValidationCycle() {
                                 :
                                 <div className="acctive">
                                     <img src={ToggleS2Act} onClick={toggleS2Active} />
-
-
                                 </div>
 
                         }

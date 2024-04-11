@@ -70,7 +70,9 @@
 .disable + img {
     display: none;
 }
-
+.disable + .toggleVideo {
+    display: none;
+}
 .acctive{
     width: 80%;
     height: auto;
@@ -79,10 +81,19 @@
     width: 80%;
     height: 100%;
 }
-.acctive + img {
+.acctive + .toggleVideo {
     display: block;
     animation: formopen;
 	animation-duration: 1.5s;
+}
+
+.toggleVideo{
+    position: relative;
+}
+.toggleVideo > video{
+    position: absolute;
+    border-radius: 0.8rem;
+
 }
 
 
@@ -99,6 +110,10 @@
 .MDisable + img {
     display: none;
 }
+.MDisable + .mToggleVideo {
+    display: none;
+}
+
 .MAcctive {
     width: 100%;
     height: auto;
@@ -112,6 +127,21 @@
     animation: formopen;
 	animation-duration: 1.5s;
 }
+.mToggleVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mToggleVideo > img {
+    width: 100%;
+    height: 100%;
+}
+.mToggleVideo > video {
+    width: 70%;
+    border-radius: 0.8rem;
+
+}
+
 
 
 
